@@ -1,0 +1,154 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Kayıt Formu */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-box {
+    background: #fff;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Alanları */
+.textbox {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f7f7f7;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textbox input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.5);
+}
+
+/* Buton */
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #6a11cb;
+    transform: scale(1.05);
+}
+
+/* Görev Listesi */
+.tasks-box {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#add-task {
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#task-list li:last-child {
+    border-bottom: none;
+}
+
+#task-list li button {
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+    .signup-box, .tasks-box {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .textbox input {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
